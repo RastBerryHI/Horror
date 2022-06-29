@@ -9,8 +9,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float gravityForce;
 
     private CharacterController characterController;
+    private Transform m_Transform;
 
-    private Vector3 movementDirection;
+    private Vector3 inputMap;
+    [SerializeField] private Vector3 movementDirection;
 
     public float Speed 
     {
@@ -38,21 +40,25 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
+        m_Transform = transform;
     }
 
     private void Update()
     {
-        movementDirection.x = Input.GetAxis("Horizontal");
-        movementDirection.z = Input.GetAxis("Vertical");
+        inputMap.x = Input.GetAxis("Horizontal");
+        inputMap.z = Input.GetAxis("Vertical");
 
         MoveToDirection(speed);
-        ApplyGravity();
     }
 
     private void MoveToDirection(float speed)
     {
         if (characterController != null) 
         {
+            movementDirection = m_Transform.right * inputMap.x + 
+            m_Transform.forward * inputMap.z;
+            
+            ApplyGravity();
             characterController.Move(movementDirection * speed * Time.deltaTime);
         }
     }
