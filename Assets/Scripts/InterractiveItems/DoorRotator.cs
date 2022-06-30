@@ -1,12 +1,16 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class DoorRotator : InterractiveItem
 {
     private Transform m_Transform;
+    private Quaternion baseRotation;
+    private bool hasRotated;
 
     private void Awake()
     {
         m_Transform = transform;
+        baseRotation = m_Transform.rotation;
     }
 
     public override void OnIterraction(GameObject sender)
@@ -16,6 +20,19 @@ public class DoorRotator : InterractiveItem
 
         Vector3 dir = (senderPos - doorPos).normalized;
 
-        Debug.Log(dir);
+        Vector3 targetDir = new Vector3(dir.x, 0, 0);
+
+        if (!hasRotated)
+        {
+            m_Transform.DORotateQuaternion(Quaternion.LookRotation (
+                Vector3.RotateTowards (m_Transform.forward, targetDir, 500, 0.0F)
+            ), 1); 
+            hasRotated = !hasRotated;
+        }
+        else
+        {
+            m_Transform.DORotateQuaternion(baseRotation, 1);
+            hasRotated = !hasRotated;
+        }
     }
 }
