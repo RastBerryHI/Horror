@@ -76,7 +76,8 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine(CrouchStand());
         }
-        MoveToDirection(isCrouching ? crouchSpeed : speed);
+        float currentSpeed = isCrouching ? crouchSpeed : speed;
+        MoveToDirection(currentSpeed);
     }
 
     private void MoveToDirection(float speed)
