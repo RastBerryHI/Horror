@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 /// <summary>
 /// Player movement handling
@@ -6,13 +7,37 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private float crouchSpeed;
     [SerializeField] private float gravityForce;
 
     private CharacterController characterController;
     private Transform m_Transform;
+    public Camera camera;
 
     private Vector3 inputMap;
     [SerializeField] private Vector3 movementDirection;
+
+    [Header("Crouching params")]
+    private bool isCrouching = false;
+    private float standingHeight = 2f;
+    private float crouchingHeight = 0.5f;
+    private Vector3 standingCenter = new Vector3(0, 0, 0);
+    private Vector3 crouchingCenter = new Vector3(0,0.5f,0);
+    private float timeToCrouch = 0.25f;
+    private bool duringCrouch;
+
+    public float CrouchSpeed
+    {
+        get => crouchSpeed;
+        set
+        {
+            crouchSpeed = value;
+            if (crouchSpeed <= 0)
+            {
+                crouchSpeed = 0.1f;
+            }
+        }
+    }
 
     public float Speed 
     {
@@ -47,8 +72,11 @@ public class PlayerController : MonoBehaviour
     {
         inputMap.x = Input.GetAxis("Horizontal");
         inputMap.z = Input.GetAxis("Vertical");
-
-        MoveToDirection(speed);
+        if (Input.GetKey(KeyCode.LeftControl)&&!duringCrouch&&characterController.isGrounded)
+        {
+            StartCoroutine(CrouchStand());
+        }
+        MoveToDirection(isCrouching ? crouchSpeed : speed);
     }
 
     private void MoveToDirection(float speed)
@@ -60,6 +88,34 @@ public class PlayerController : MonoBehaviour
             
             ApplyGravity();
             characterController.Move(movementDirection * speed * Time.deltaTime);
+        }
+    }
+
+    private IEnumerator CrouchStand()
+    {
+        if (isCrouching && Physics.Raycast(camera.transform.position, Vector3.up, 0.5f))
+            yield break;
+        if (characterController != null)
+        {
+            duringCrouch = true;
+            float targetHeight = isCrouching ? standingHeight : crouchingHeight;
+            float currentHeight = characterController.height;
+            Vector3 targetCenter = isCrouching ? standingCenter : crouchingCenter;
+            Vector3 currentCenter = characterController.center;
+            float elapsedTime = 0;
+            while (elapsedTime < timeToCrouch)
+            {
+                characterController.center = Vector3.Lerp(currentCenter, targetCenter, elapsedTime / timeToCrouch);
+                characterController.height = Mathf.Lerp(currentHeight, targetHeight, elapsedTime / timeToCrouch);
+                elapsedTime += Time.deltaTime;
+                yield return null;
+            }
+
+            characterController.height = targetHeight;
+            characterController.center = targetCenter;
+            isCrouching = !isCrouching;
+
+            duringCrouch = false;
         }
     }
 
