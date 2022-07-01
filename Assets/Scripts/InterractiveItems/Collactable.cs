@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class Collactable : MonoBehaviour, IInterractiveItem
 {
-    private int nameId;
+    [SerializeField] private int nameId;
     /// <summary>
     /// Hashed name string id
     /// </summary>
     /// <value></value>
-    public int Name => nameId; 
+    public int NameID => nameId; 
 
     private void Awake()
     {
@@ -24,5 +24,6 @@ public class Collactable : MonoBehaviour, IInterractiveItem
         }
 
         inventory.AddToInventory(this);
+        Destroy(GetComponent<Collider>());
     }
 }
