@@ -1897,6 +1897,7 @@ GameObject:
   - component: {fileID: 251025067}
   - component: {fileID: 251025066}
   - component: {fileID: 251025065}
+  - component: {fileID: 251025068}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (10)
   m_TagString: Untagged
@@ -1970,6 +1971,22 @@ LODGroup:
     renderers:
     - renderer: {fileID: 1748395097}
   m_Enabled: 1
+--- !u!54 &251025068
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251025063}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1001 &253917983
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3075,6 +3092,7 @@ GameObject:
   - component: {fileID: 485615076}
   - component: {fileID: 485615075}
   - component: {fileID: 485615074}
+  - component: {fileID: 485615077}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (18)
   m_TagString: Untagged
@@ -3148,6 +3166,22 @@ LODGroup:
     renderers:
     - renderer: {fileID: 867075761}
   m_Enabled: 1
+--- !u!54 &485615077
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485615072}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1 &510361412
 GameObject:
   m_ObjectHideFlags: 0
@@ -3160,6 +3194,7 @@ GameObject:
   - component: {fileID: 510361416}
   - component: {fileID: 510361415}
   - component: {fileID: 510361414}
+  - component: {fileID: 510361417}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (13)
   m_TagString: Untagged
@@ -3233,6 +3268,22 @@ LODGroup:
     renderers:
     - renderer: {fileID: 83978908}
   m_Enabled: 1
+--- !u!54 &510361417
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510361412}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1 &520902084
 GameObject:
   m_ObjectHideFlags: 0
@@ -4542,6 +4593,7 @@ GameObject:
   - component: {fileID: 643297763}
   - component: {fileID: 643297762}
   - component: {fileID: 643297761}
+  - component: {fileID: 643297764}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (8)
   m_TagString: Untagged
@@ -4615,6 +4667,22 @@ LODGroup:
     renderers:
     - renderer: {fileID: 543252062}
   m_Enabled: 1
+--- !u!54 &643297764
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643297759}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1 &653260035
 GameObject:
   m_ObjectHideFlags: 0
@@ -4989,6 +5057,7 @@ GameObject:
   - component: {fileID: 722737444}
   - component: {fileID: 722737443}
   - component: {fileID: 722737442}
+  - component: {fileID: 722737445}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (19)
   m_TagString: Untagged
@@ -5062,6 +5131,22 @@ LODGroup:
     renderers:
     - renderer: {fileID: 745958708}
   m_Enabled: 1
+--- !u!54 &722737445
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722737440}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1 &726073588
 GameObject:
   m_ObjectHideFlags: 0
@@ -8025,6 +8110,7 @@ GameObject:
   - component: {fileID: 1159179829}
   - component: {fileID: 1159179828}
   - component: {fileID: 1159179827}
+  - component: {fileID: 1159179830}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (11)
   m_TagString: Untagged
@@ -8098,6 +8184,22 @@ LODGroup:
     renderers:
     - renderer: {fileID: 999271559}
   m_Enabled: 1
+--- !u!54 &1159179830
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159179825}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1001 &1174667671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8253,6 +8355,7 @@ GameObject:
   - component: {fileID: 1196759123}
   - component: {fileID: 1196759122}
   - component: {fileID: 1196759121}
+  - component: {fileID: 1196759124}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (7)
   m_TagString: Untagged
@@ -8326,6 +8429,22 @@ LODGroup:
     renderers:
     - renderer: {fileID: 726073590}
   m_Enabled: 1
+--- !u!54 &1196759124
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196759119}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1 &1209389037
 GameObject:
   m_ObjectHideFlags: 0
@@ -8338,6 +8457,7 @@ GameObject:
   - component: {fileID: 1209389041}
   - component: {fileID: 1209389040}
   - component: {fileID: 1209389039}
+  - component: {fileID: 1209389042}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (20)
   m_TagString: Untagged
@@ -8411,6 +8531,22 @@ LODGroup:
     renderers:
     - renderer: {fileID: 544240496}
   m_Enabled: 1
+--- !u!54 &1209389042
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209389037}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1001 &1222603494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8906,6 +9042,7 @@ GameObject:
   - component: {fileID: 1338734629}
   - component: {fileID: 1338734628}
   - component: {fileID: 1338734627}
+  - component: {fileID: 1338734630}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (17)
   m_TagString: Untagged
@@ -8979,6 +9116,22 @@ LODGroup:
     renderers:
     - renderer: {fileID: 952450011}
   m_Enabled: 1
+--- !u!54 &1338734630
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338734625}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1001 &1348410646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10218,6 +10371,7 @@ GameObject:
   - component: {fileID: 1559555585}
   - component: {fileID: 1559555584}
   - component: {fileID: 1559555583}
+  - component: {fileID: 1559555586}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (14)
   m_TagString: Untagged
@@ -10291,6 +10445,22 @@ LODGroup:
     renderers:
     - renderer: {fileID: 1790824523}
   m_Enabled: 1
+--- !u!54 &1559555586
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559555581}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1 &1563859461
 GameObject:
   m_ObjectHideFlags: 0
@@ -10303,6 +10473,7 @@ GameObject:
   - component: {fileID: 1563859465}
   - component: {fileID: 1563859464}
   - component: {fileID: 1563859463}
+  - component: {fileID: 1563859466}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (6)
   m_TagString: Untagged
@@ -10376,6 +10547,22 @@ LODGroup:
     renderers:
     - renderer: {fileID: 2082226773}
   m_Enabled: 1
+--- !u!54 &1563859466
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563859461}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1001 &1567581996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12201,6 +12388,7 @@ GameObject:
   - component: {fileID: 1786298713}
   - component: {fileID: 1786298712}
   - component: {fileID: 1786298711}
+  - component: {fileID: 1786298714}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (16)
   m_TagString: Untagged
@@ -12274,6 +12462,22 @@ LODGroup:
     renderers:
     - renderer: {fileID: 165817445}
   m_Enabled: 1
+--- !u!54 &1786298714
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786298709}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1001 &1788579516
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12918,6 +13122,7 @@ GameObject:
   - component: {fileID: 1875441118}
   - component: {fileID: 1875441117}
   - component: {fileID: 1875441116}
+  - component: {fileID: 1875441119}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (12)
   m_TagString: Untagged
@@ -12991,6 +13196,22 @@ LODGroup:
     renderers:
     - renderer: {fileID: 1333254749}
   m_Enabled: 1
+--- !u!54 &1875441119
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875441114}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1001 &1888031128
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13065,6 +13286,7 @@ GameObject:
   - component: {fileID: 1899587782}
   - component: {fileID: 1899587781}
   - component: {fileID: 1899587780}
+  - component: {fileID: 1899587783}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (9)
   m_TagString: Untagged
@@ -13138,6 +13360,22 @@ LODGroup:
     renderers:
     - renderer: {fileID: 1819743349}
   m_Enabled: 1
+--- !u!54 &1899587783
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899587778}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1001 &1906815202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14012,6 +14250,7 @@ GameObject:
   - component: {fileID: 2058490735}
   - component: {fileID: 2058490734}
   - component: {fileID: 2058490733}
+  - component: {fileID: 2058490736}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (15)
   m_TagString: Untagged
@@ -14085,6 +14324,22 @@ LODGroup:
     renderers:
     - renderer: {fileID: 1733138083}
   m_Enabled: 1
+--- !u!54 &2058490736
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058490731}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1001 &2069479153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14446,6 +14701,7 @@ GameObject:
   - component: {fileID: 2110491231}
   - component: {fileID: 2110491230}
   - component: {fileID: 2110491229}
+  - component: {fileID: 2110491232}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (21)
   m_TagString: Untagged
@@ -14519,6 +14775,22 @@ LODGroup:
     renderers:
     - renderer: {fileID: 1504123454}
   m_Enabled: 1
+--- !u!54 &2110491232
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110491227}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1001 &2124680952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14815,6 +15087,7 @@ GameObject:
   - component: {fileID: 205848725429062425}
   - component: {fileID: 1053285286697515}
   - component: {fileID: 1053285286697514}
+  - component: {fileID: 1053285286697516}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (5)
   m_TagString: Untagged
@@ -14847,6 +15120,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4a7515a9de8d9e47962cbd36cb70fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &1053285286697516
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053285286697513}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1 &1139039884659555
 GameObject:
   m_ObjectHideFlags: 0
@@ -15490,6 +15779,7 @@ GameObject:
   - component: {fileID: 205951654972947363}
   - component: {fileID: 76126630}
   - component: {fileID: 76126628}
+  - component: {fileID: 1890013199305378}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD
   m_TagString: Untagged
@@ -15497,6 +15787,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!54 &1890013199305378
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890013199305377}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1 &1899681679983559
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,6 +15,20 @@ public class DoorRotator : InterractiveItem
         baseRotation = m_Transform.rotation;
 
         openingVector = m_Transform.right * 90;
+    } 
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.tag == "Door")
+        {
+            ReturnToBaseRotation();
+        }
+    }
+
+    private void ReturnToBaseRotation()
+    {
+        m_Transform.DORotateQuaternion(baseRotation, 1);
+        hasRotated = !hasRotated;
     }
 
     public override void OnIterraction(GameObject sender)
@@ -55,8 +69,7 @@ public class DoorRotator : InterractiveItem
         }
         else
         {
-            m_Transform.DORotateQuaternion(baseRotation, 1);
-            hasRotated = !hasRotated;
+            ReturnToBaseRotation();
         }
     }
 }
