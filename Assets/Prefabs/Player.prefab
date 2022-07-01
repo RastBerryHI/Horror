@@ -65,8 +65,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  crouchSpeed: 1
   gravityForce: -2
-  movementDirection: {x: 0, y: 0, z: 0}
+  cameraTransform: {fileID: 1034398979773496497}
 --- !u!114 &2255690083534019001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,7 +82,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interractionMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 64
   interractionRange: 1
 --- !u!1 &1034398979773496496
 GameObject:

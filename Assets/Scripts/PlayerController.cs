@@ -10,12 +10,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float crouchSpeed;
     [SerializeField] private float gravityForce;
 
-    private CharacterController characterController;
+    [SerializeField] private Transform cameraTransform;
     private Transform m_Transform;
-    public Camera camera;
+    private CharacterController characterController;
 
+    private Vector3 movementDirection;
     private Vector3 inputMap;
-    [SerializeField] private Vector3 movementDirection;
+    private float currentSpeed;
 
     [Header("Crouching params")]
     private bool isCrouching = false;
@@ -72,12 +73,9 @@ public class PlayerController : MonoBehaviour
     {
         inputMap.x = Input.GetAxis("Horizontal");
         inputMap.z = Input.GetAxis("Vertical");
-        if (Input.GetKey(KeyCode.LeftControl)&&!duringCrouch&&characterController.isGrounded)
-        {
-            StartCoroutine(CrouchStand());
-        }
-        float currentSpeed = isCrouching ? crouchSpeed : speed;
+        
         MoveToDirection(currentSpeed);
+        DoCrouch();
     }
 
     private void MoveToDirection(float speed)
@@ -92,10 +90,23 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void DoCrouch()
+    {
+        if (Input.GetKey(KeyCode.LeftControl)&&!duringCrouch&&characterController.isGrounded)
+        {
+            StartCoroutine(CrouchStand());
+        }
+        
+        currentSpeed = isCrouching ? crouchSpeed : speed;
+    }
+
     private IEnumerator CrouchStand()
     {
-        if (isCrouching && Physics.Raycast(camera.transform.position, Vector3.up, 0.5f))
+        if (isCrouching && Physics.Raycast(cameraTransform.transform.position, Vector3.up, 0.5f))
+        {
             yield break;
+        }
+
         if (characterController != null)
         {
             duringCrouch = true;
@@ -104,6 +115,7 @@ public class PlayerController : MonoBehaviour
             Vector3 targetCenter = isCrouching ? standingCenter : crouchingCenter;
             Vector3 currentCenter = characterController.center;
             float elapsedTime = 0;
+
             while (elapsedTime < timeToCrouch)
             {
                 characterController.center = Vector3.Lerp(currentCenter, targetCenter, elapsedTime / timeToCrouch);
