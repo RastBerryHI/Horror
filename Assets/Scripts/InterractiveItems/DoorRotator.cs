@@ -1,7 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class DoorRotator : InterractiveItem
+public class DoorRotator : MonoBehaviour, IInterractiveItem
 {
     private Transform m_Transform;
     private Quaternion baseRotation;
@@ -31,14 +31,13 @@ public class DoorRotator : InterractiveItem
         hasRotated = !hasRotated;
     }
 
-    public override void OnIterraction(GameObject sender)
+    public void OnIterraction(GameObject sender)
     {
         Vector3 invertedLook = -sender.transform.forward;
         Vector3 euler;
 
         if (!hasRotated)
         {
-
             // Eboochiy kosteel            
             if ( Mathf.Abs( invertedLook.x ) > 0.1f)
             {

@@ -1900,7 +1900,7 @@ GameObject:
   - component: {fileID: 251025068}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (10)
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1983,9 +1983,9 @@ Rigidbody:
   m_Drag: 1
   m_AngularDrag: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 3
 --- !u!1001 &253917983
 PrefabInstance:
@@ -3095,7 +3095,7 @@ GameObject:
   - component: {fileID: 485615077}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (18)
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3178,9 +3178,9 @@ Rigidbody:
   m_Drag: 1
   m_AngularDrag: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 3
 --- !u!1 &510361412
 GameObject:
@@ -3197,7 +3197,7 @@ GameObject:
   - component: {fileID: 510361417}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (13)
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3280,9 +3280,9 @@ Rigidbody:
   m_Drag: 1
   m_AngularDrag: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 3
 --- !u!1 &520902084
 GameObject:
@@ -4186,7 +4186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 492314, guid: 540dc2ae93c244ca2abe6650ce07e4a0, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 492314, guid: 540dc2ae93c244ca2abe6650ce07e4a0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4596,7 +4596,7 @@ GameObject:
   - component: {fileID: 643297764}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (8)
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4679,9 +4679,9 @@ Rigidbody:
   m_Drag: 1
   m_AngularDrag: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 3
 --- !u!1 &653260035
 GameObject:
@@ -4729,7 +4729,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &658186102
 PrefabInstance:
@@ -5060,7 +5060,7 @@ GameObject:
   - component: {fileID: 722737445}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (19)
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5143,9 +5143,9 @@ Rigidbody:
   m_Drag: 1
   m_AngularDrag: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 3
 --- !u!1 &726073588
 GameObject:
@@ -8113,7 +8113,7 @@ GameObject:
   - component: {fileID: 1159179830}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (11)
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8196,9 +8196,9 @@ Rigidbody:
   m_Drag: 1
   m_AngularDrag: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 3
 --- !u!1001 &1174667671
 PrefabInstance:
@@ -8358,7 +8358,7 @@ GameObject:
   - component: {fileID: 1196759124}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (7)
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8441,9 +8441,9 @@ Rigidbody:
   m_Drag: 1
   m_AngularDrag: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 3
 --- !u!1 &1209389037
 GameObject:
@@ -8460,7 +8460,7 @@ GameObject:
   - component: {fileID: 1209389042}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (20)
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8543,9 +8543,9 @@ Rigidbody:
   m_Drag: 1
   m_AngularDrag: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 3
 --- !u!1001 &1222603494
 PrefabInstance:
@@ -9045,7 +9045,7 @@ GameObject:
   - component: {fileID: 1338734630}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (17)
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9128,9 +9128,9 @@ Rigidbody:
   m_Drag: 1
   m_AngularDrag: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 3
 --- !u!1001 &1348410646
 PrefabInstance:
@@ -9688,7 +9688,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 426556, guid: 6bf9d6b9bf8c7432bac2e53f43134d81, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 426556, guid: 6bf9d6b9bf8c7432bac2e53f43134d81, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10222,7 +10222,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &1543687351
 PrefabInstance:
@@ -10237,7 +10237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010863086976, guid: d1202bf32ad4d33409f594a0d6a4b480, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4000010863086976, guid: d1202bf32ad4d33409f594a0d6a4b480, type: 3}
       propertyPath: m_LocalScale.x
@@ -10374,7 +10374,7 @@ GameObject:
   - component: {fileID: 1559555586}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (14)
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10457,9 +10457,9 @@ Rigidbody:
   m_Drag: 1
   m_AngularDrag: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 3
 --- !u!1 &1563859461
 GameObject:
@@ -10476,7 +10476,7 @@ GameObject:
   - component: {fileID: 1563859466}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (6)
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10559,9 +10559,9 @@ Rigidbody:
   m_Drag: 1
   m_AngularDrag: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 3
 --- !u!1001 &1567581996
 PrefabInstance:
@@ -12391,7 +12391,7 @@ GameObject:
   - component: {fileID: 1786298714}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (16)
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12474,9 +12474,9 @@ Rigidbody:
   m_Drag: 1
   m_AngularDrag: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 3
 --- !u!1001 &1788579516
 PrefabInstance:
@@ -13125,7 +13125,7 @@ GameObject:
   - component: {fileID: 1875441119}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (12)
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13208,9 +13208,9 @@ Rigidbody:
   m_Drag: 1
   m_AngularDrag: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 3
 --- !u!1001 &1888031128
 PrefabInstance:
@@ -13289,7 +13289,7 @@ GameObject:
   - component: {fileID: 1899587783}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (9)
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13372,9 +13372,9 @@ Rigidbody:
   m_Drag: 1
   m_AngularDrag: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 3
 --- !u!1001 &1906815202
 PrefabInstance:
@@ -13880,7 +13880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000013091849974, guid: 9c7f97eb257571446a2c55ad625cac36, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4000013091849974, guid: 9c7f97eb257571446a2c55ad625cac36, type: 3}
       propertyPath: m_LocalScale.x
@@ -14253,7 +14253,7 @@ GameObject:
   - component: {fileID: 2058490736}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (15)
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14336,9 +14336,9 @@ Rigidbody:
   m_Drag: 1
   m_AngularDrag: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 3
 --- !u!1001 &2069479153
 PrefabInstance:
@@ -14704,7 +14704,7 @@ GameObject:
   - component: {fileID: 2110491232}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (21)
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14787,9 +14787,9 @@ Rigidbody:
   m_Drag: 1
   m_AngularDrag: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 3
 --- !u!1001 &2124680952
 PrefabInstance:
@@ -14944,7 +14944,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 45, y: 130, z: 90}
 --- !u!1 &2142473758
 GameObject:
@@ -15090,7 +15090,7 @@ GameObject:
   - component: {fileID: 1053285286697516}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD (5)
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15132,9 +15132,9 @@ Rigidbody:
   m_Drag: 1
   m_AngularDrag: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 3
 --- !u!1 &1139039884659555
 GameObject:
@@ -15782,7 +15782,7 @@ GameObject:
   - component: {fileID: 1890013199305378}
   m_Layer: 6
   m_Name: Door_Room_Entry_LOD
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15799,9 +15799,9 @@ Rigidbody:
   m_Drag: 1
   m_AngularDrag: 1
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 3
 --- !u!1 &1899681679983559
 GameObject:
@@ -16243,7 +16243,7 @@ Transform:
   - {fileID: 612055057}
   - {fileID: 983292794}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4534787083839331
 Transform:
@@ -18525,3 +18525,89 @@ LODGroup:
     renderers:
     - renderer: {fileID: 23484839501797831}
   m_Enabled: 1
+--- !u!1001 &4660696414276638381
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 420148118869319217, guid: 83da5e48bc75bb447b8479636c485363, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 420148118869319217, guid: 83da5e48bc75bb447b8479636c485363, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.308
+      objectReference: {fileID: 0}
+    - target: {fileID: 420148118869319217, guid: 83da5e48bc75bb447b8479636c485363, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.8819
+      objectReference: {fileID: 0}
+    - target: {fileID: 420148118869319217, guid: 83da5e48bc75bb447b8479636c485363, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.473
+      objectReference: {fileID: 0}
+    - target: {fileID: 420148118869319217, guid: 83da5e48bc75bb447b8479636c485363, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 420148118869319217, guid: 83da5e48bc75bb447b8479636c485363, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0000004917384
+      objectReference: {fileID: 0}
+    - target: {fileID: 420148118869319217, guid: 83da5e48bc75bb447b8479636c485363, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 420148118869319217, guid: 83da5e48bc75bb447b8479636c485363, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000042468312
+      objectReference: {fileID: 0}
+    - target: {fileID: 420148118869319217, guid: 83da5e48bc75bb447b8479636c485363, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420148118869319217, guid: 83da5e48bc75bb447b8479636c485363, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 420148118869319217, guid: 83da5e48bc75bb447b8479636c485363, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3715456103804824610, guid: 83da5e48bc75bb447b8479636c485363, type: 3}
+      propertyPath: m_Name
+      value: Key
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660696416113144961, guid: 83da5e48bc75bb447b8479636c485363, type: 3}
+      propertyPath: m_Size.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660696416113144961, guid: 83da5e48bc75bb447b8479636c485363, type: 3}
+      propertyPath: m_Size.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660696416113144961, guid: 83da5e48bc75bb447b8479636c485363, type: 3}
+      propertyPath: m_Size.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 83da5e48bc75bb447b8479636c485363, type: 3}
+--- !u!1 &8296172667861645967 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3715456103804824610, guid: 83da5e48bc75bb447b8479636c485363, type: 3}
+  m_PrefabInstance: {fileID: 4660696414276638381}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8296172667861645968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172667861645967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8483bad0e2f3d24099eef29e3e12c90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
