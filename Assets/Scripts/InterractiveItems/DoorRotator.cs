@@ -24,9 +24,7 @@ public class DoorRotator : InterractiveItem
 
         if (!hasRotated)
         {
-            m_Transform.DORotateQuaternion(Quaternion.LookRotation (
-                Vector3.RotateTowards (m_Transform.forward, targetDir, 500, 0.0F)
-            ), 1); 
+            m_Transform.DORotateQuaternion(Quaternion.LookRotation(-sender.transform.forward*90), 1);
             hasRotated = !hasRotated;
         }
         else
