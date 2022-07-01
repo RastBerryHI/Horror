@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class DrawOpener : InterractiveItem
+public class DrawOpener : MonoBehaviour, IInterractiveItem
 {
     private bool isOpen = false;
     private float openingTime = 0.5f;
@@ -18,7 +16,7 @@ public class DrawOpener : InterractiveItem
         startingPoint = transform.localPosition.z;
     }
 
-    public override void OnIterraction(GameObject sender)
+    public void OnIterraction(GameObject sender)
     {
         if (!isOpen)
         {
