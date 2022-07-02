@@ -8,7 +8,7 @@ public class DoorRotator : MonoBehaviour, IInterractiveItem
     private Vector3 openingVector;
     private Vector3 positiveVector;
     private bool hasRotated;
-    private bool canOpen;
+    private bool canOpen = true;
 
     private void Awake()
     {
