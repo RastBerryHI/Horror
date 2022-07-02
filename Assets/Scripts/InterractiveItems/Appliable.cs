@@ -2,15 +2,19 @@ using UnityEngine;
 
 public class Appliable : MonoBehaviour
 {
-    [SerializeField] private Animation anim;
+    //private Animator anim;
+    private Transform m_Transform;
+    private int applyId = Animator.StringToHash("Apply");
 
+    public Transform Mtransform => m_Transform;
     private void Awake()
     {
-        anim = GetComponent<Animation>();
+        //anim = GetComponent<Animator>();
+        m_Transform = transform;
     }
 
     public void Apply()
     {
-        anim.Play();
+        //anim.SetTrigger(applyId); 
     }
 }

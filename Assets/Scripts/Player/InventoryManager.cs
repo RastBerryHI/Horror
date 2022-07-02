@@ -13,7 +13,8 @@ public class InventoryManager : MonoBehaviour
         {
             inventorySlots.Add(item);
             item.gameObject.SetActive(false);
-            item.transform.parent = inventrySlotsParent;
+            item.transform.SetParent(inventrySlotsParent);
+            item.transform.position = inventrySlotsParent.transform.position;
             avaliableSlots--;
         }
     }
@@ -33,10 +34,13 @@ public class InventoryManager : MonoBehaviour
                 needed = item;
                 item.transform.parent = null;
                 item.gameObject.SetActive(true);
-
-                inventorySlots.Remove(item);
-                avaliableSlots++;
             }
+        }
+
+        if (needed != null)
+        {
+            inventorySlots.Remove(needed);
+            avaliableSlots++;
         }
 
         return needed;
