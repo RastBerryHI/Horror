@@ -8,6 +8,7 @@ public class DoorRotator : MonoBehaviour, IInterractiveItem
     private Vector3 openingVector;
     private Vector3 positiveVector;
     private bool hasRotated;
+    private bool canOpen;
 
     private void Awake()
     {
@@ -31,8 +32,15 @@ public class DoorRotator : MonoBehaviour, IInterractiveItem
         hasRotated = !hasRotated;
     }
 
+    public void AllowOpen() => canOpen = true;
+
     public void OnIterraction(GameObject sender)
     {
+        if (!canOpen)
+        {
+            return;
+        }
+
         Vector3 invertedLook = -sender.transform.forward;
         Vector3 euler;
 

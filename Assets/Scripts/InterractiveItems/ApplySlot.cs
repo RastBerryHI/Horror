@@ -1,5 +1,6 @@
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ApplySlot : MonoBehaviour, IInterractiveItem
 {
@@ -11,6 +12,8 @@ public class ApplySlot : MonoBehaviour, IInterractiveItem
     
     private Appliable needed;
     private bool isSucceed;
+
+    public UnityEvent onApplyFinnish;
 
     private void Start()
     {
@@ -39,6 +42,11 @@ public class ApplySlot : MonoBehaviour, IInterractiveItem
     private void OnMilestoneReached()
     {
         needed.Mtransform.DOKill(true);
-        needed.Mtransform.DOMove(transform.position, 1);
+        needed.Mtransform.DOMove(transform.position, 1).onComplete += OnSuccess;
+    }
+
+    private void OnSuccess()
+    {
+        onApplyFinnish.Invoke();
     }
 }
