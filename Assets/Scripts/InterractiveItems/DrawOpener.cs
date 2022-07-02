@@ -12,7 +12,7 @@ public class DrawOpener : MonoBehaviour, IInterractiveItem
     private void Awake()
     {
         m_Transform = transform;
-        openingDist = GetComponent<Collider>().bounds.size.z;
+        openingDist = GetComponent<Collider>().bounds.size.z * 2 / 3;
         startingPoint = transform.localPosition.z;
     }
 
