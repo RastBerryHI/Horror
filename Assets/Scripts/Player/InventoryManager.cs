@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
-    [SerializeField] private HashSet<Collactable> inventorySlots = new HashSet<Collactable>();
+    [SerializeField] private List<Collactable> inventorySlots = new List<Collactable>();
     [SerializeField] private Transform inventrySlotsParent;
     [SerializeField] private uint avaliableSlots; 
 
@@ -13,8 +13,36 @@ public class InventoryManager : MonoBehaviour
         {
             inventorySlots.Add(item);
             item.gameObject.SetActive(false);
-            item.transform.parent = inventrySlotsParent;
+            item.transform.SetParent(inventrySlotsParent);
+            item.transform.position = inventrySlotsParent.transform.position;
             avaliableSlots--;
         }
+    }
+
+    /// <summary>
+    /// Can return null, handle it
+    /// </summary>
+    /// <param name="itemId">desired item id to get</param>
+    /// <returns></returns>
+    public Collactable GetFromInventory(int itemId)
+    {
+        Collactable needed = null;
+        foreach(Collactable item in inventorySlots)
+        {
+            if (item.NameID == itemId)
+            {
+                needed = item;
+                item.transform.parent = null;
+                item.gameObject.SetActive(true);
+            }
+        }
+
+        if (needed != null)
+        {
+            inventorySlots.Remove(needed);
+            avaliableSlots++;
+        }
+
+        return needed;
     }
 }
