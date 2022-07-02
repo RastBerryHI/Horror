@@ -9,13 +9,17 @@ public class InventoryManager : MonoBehaviour
 
     public void AddToInventory(Collactable item)
     {
-        if (avaliableSlots > 0 && inventorySlots != null)
+        if (avaliableSlots > 0 && item != null)
         {
             inventorySlots.Add(item);
             item.gameObject.SetActive(false);
             item.transform.SetParent(inventrySlotsParent);
             item.transform.position = inventrySlotsParent.transform.position;
             avaliableSlots--;
+        }
+        else
+        {
+            Debug.LogError("No Slots!");
         }
     }
 
