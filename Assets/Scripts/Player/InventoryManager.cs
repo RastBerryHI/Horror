@@ -1,11 +1,14 @@
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
-    [SerializeField] private List<Collactable> inventorySlots = new List<Collactable>();
+    [SerializeField] private ObservableCollection<Collactable> inventorySlots = new ObservableCollection<Collactable>();
     [SerializeField] private Transform inventrySlotsParent;
     [SerializeField] private uint avaliableSlots; 
+
+    public ObservableCollection<Collactable> InventorySlots => inventorySlots;
 
     public void AddToInventory(Collactable item)
     {
