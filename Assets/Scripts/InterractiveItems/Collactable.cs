@@ -1,13 +1,17 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Collactable : MonoBehaviour, IInterractiveItem
 {
     [SerializeField] private int nameId;
+    [SerializeField] private Texture image;
     /// <summary>
     /// Hashed name string id
     /// </summary>
     /// <value></value>
-    public int NameID => nameId; 
+    public int NameID => nameId;
+
+    public Texture Image => image;
 
     private void Awake()
     {

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Door
   - Draw
+  - LittleDoor
   layers:
   - Default
   - TransparentFX
