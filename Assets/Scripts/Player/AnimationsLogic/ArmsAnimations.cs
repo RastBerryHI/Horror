@@ -15,7 +15,7 @@ public class ArmsAnimations : MonoBehaviour
             case "Draw":
                 rightArm.SetTrigger(drawOpenId);
                 break;
-            case "LittleDraw":
+            case "LittleDoor":
                 rightArm.SetTrigger(drawOpenId);
                 break;
             case "Door":

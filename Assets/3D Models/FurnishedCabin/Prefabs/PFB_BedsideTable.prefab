@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 8678595423261632001}
   m_Layer: 8
   m_Name: draw
-  m_TagString: Untagged
+  m_TagString: Draw
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

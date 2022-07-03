@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 4351318976748187981}
   m_Layer: 0
   m_Name: grp_doorsL
-  m_TagString: Untagged
+  m_TagString: LittleDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -474,7 +474,7 @@ GameObject:
   - component: {fileID: 8837246270395057890}
   m_Layer: 0
   m_Name: grp_doorsR
-  m_TagString: Untagged
+  m_TagString: LittleDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

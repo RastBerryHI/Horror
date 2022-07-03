@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2161783275392668689}
   m_Layer: 8
   m_Name: door05
-  m_TagString: Untagged
+  m_TagString: LittleDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 546984008981955728}
   m_Layer: 8
   m_Name: draw04
-  m_TagString: Untagged
+  m_TagString: Draw
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -352,7 +352,7 @@ GameObject:
   - component: {fileID: 6546064752312794371}
   m_Layer: 8
   m_Name: door01
-  m_TagString: Untagged
+  m_TagString: LittleDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -461,7 +461,7 @@ GameObject:
   - component: {fileID: 9099790044993535278}
   m_Layer: 8
   m_Name: draw03
-  m_TagString: Untagged
+  m_TagString: Draw
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -570,7 +570,7 @@ GameObject:
   - component: {fileID: 7996710849593645535}
   m_Layer: 8
   m_Name: door03
-  m_TagString: Untagged
+  m_TagString: LittleDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -775,7 +775,7 @@ GameObject:
   - component: {fileID: 6509337794545150508}
   m_Layer: 8
   m_Name: door02
-  m_TagString: Untagged
+  m_TagString: LittleDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -884,7 +884,7 @@ GameObject:
   - component: {fileID: 5560391801576475489}
   m_Layer: 8
   m_Name: door04
-  m_TagString: Untagged
+  m_TagString: LittleDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1027,7 +1027,7 @@ GameObject:
   - component: {fileID: 7911291812724796903}
   m_Layer: 8
   m_Name: draw01
-  m_TagString: Untagged
+  m_TagString: Draw
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1136,7 +1136,7 @@ GameObject:
   - component: {fileID: 8963896912483984062}
   m_Layer: 8
   m_Name: draw02
-  m_TagString: Untagged
+  m_TagString: Draw
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
