@@ -10,6 +10,10 @@ public class InventoryManager : MonoBehaviour
 
     public ObservableCollection<Collactable> InventorySlots => inventorySlots;
 
+    public delegate void ItemsRemovalEventHandler(int index);
+
+    public event ItemsRemovalEventHandler OnItemsRemoval;
+
     public void AddToInventory(Collactable item)
     {
         if (avaliableSlots > 0 && item != null)
@@ -46,6 +50,7 @@ public class InventoryManager : MonoBehaviour
 
         if (needed != null)
         {
+            OnItemsRemoval(inventorySlots.IndexOf(needed));
             inventorySlots.Remove(needed);
             avaliableSlots++;
         }
