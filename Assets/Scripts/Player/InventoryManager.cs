@@ -48,8 +48,9 @@ public class InventoryManager : MonoBehaviour
         {
             inventorySlots.Remove(needed);
             avaliableSlots++;
+            Debug.Log("Success");
         }
-
+        else { Debug.Log("Fuck"); }
         return needed;
     }
 }
