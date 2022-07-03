@@ -31,14 +31,13 @@ public class InventoryBar : MonoBehaviour
 
     private void ManageItems(object sender, NotifyCollectionChangedEventArgs e)
     {
-        int i = inventoryManager.InventorySlots.Count - 1;
-        Button button = inventorySlots[i];
         if (e.Action == NotifyCollectionChangedAction.Add)
         {
+            int i = inventoryManager.InventorySlots.Count - 1;
+            Button button = inventorySlots[i];
             RawImage img = button.transform.GetChild(0).GetComponent<RawImage>();
             img.color = new Color(img.color.r, img.color.g, img.color.b, 255);
             img.texture = inventoryManager.InventorySlots[i].Image;
         }
     }
-
 }
