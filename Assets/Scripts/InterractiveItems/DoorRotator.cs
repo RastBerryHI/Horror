@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class DoorRotator : MonoBehaviour, IInterractiveItem
 {
+    [SerializeField] private bool canOpen = true;
     private Transform m_Transform;
     private Quaternion baseRotation;
     private Vector3 openingVector;
     private Vector3 positiveVector;
     private bool hasRotated;
-    private bool canOpen = true;
 
     private void Awake()
     {

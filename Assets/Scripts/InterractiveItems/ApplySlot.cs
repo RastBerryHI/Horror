@@ -44,6 +44,7 @@ public class ApplySlot : MonoBehaviour, IInterractiveItem
 
         if (needed != null)
         {  
+            needed.Mtransform.parent = transform;
             StartCoroutine(IterateThroughMilestones());
 
             isSucceed = true;
@@ -60,20 +61,20 @@ public class ApplySlot : MonoBehaviour, IInterractiveItem
                 needed.Mtransform.rotation = milestones[i].rotation;
             }
 
-            lastTween = needed.Mtransform.DOMove(milestones[i].position, applyInterval).onComplete;    
-            
             if (i == 1)
             {
-                lastTween += FinnishApply;
+                needed.Mtransform.DOMove(milestones[i].position, applyInterval).onComplete += FinnishApply;
+                break;
             }
 
+            needed.Mtransform.DOMove(milestones[i].position, applyInterval);    
+            
             yield return waiter;
         }
     }
 
     private void FinnishApply()
     {
-        Debug.LogWarning($"Done");
         onApplyFinnish.Invoke();
         lastTween -= FinnishApply;
     }
