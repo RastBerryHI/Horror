@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Interractor : MonoBehaviour
 {
     [SerializeField] private LayerMask interractionMask;
     [SerializeField] private float interractionRange;
+
+    public UnityEvent<RaycastHit> onInterract;
 
     private Ray ray;
     private RaycastHit hit;
@@ -31,6 +34,7 @@ public class Interractor : MonoBehaviour
             if (itemToInterract != null)
             {
                 itemToInterract.OnIterraction(gameObject);
+                onInterract.Invoke(hit);
             }
         }
     }
