@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public enum Disks : sbyte
 {
@@ -11,20 +12,17 @@ public class Lock : MonoBehaviour
 {
     [SerializeField] private LockCylinder[] disks;
     [SerializeField] private Transform handle;
-    [SerializeField] private Transform pickupPosition;
+    private Transform MTransform;
 
+    [SerializeField]private Vector3 code;
     private Vector3 handleRot;
     private Vector3 rotation;
-    private Vector3 code;
 
 
     private int cylinderA, cylinderB, cylinderC;
     private bool isCylinderA, isCylinderB, isCylinderC;
 
-    public Transform PickupPosition
-    {
-        get => pickupPosition;
-    }
+    public UnityEvent onLockOpen;
 
     private int CylinderA
     {
@@ -78,12 +76,13 @@ public class Lock : MonoBehaviour
     {
         rotation = new Vector3(0, 36, 0);
         handleRot = new Vector3(50, 0, 0);
-        code = new Vector3(6, 8, 1);
+        MTransform = transform;
     }
 
     private void OpenLock()
     {
-        transform.gameObject.AddComponent<Rigidbody>();
+        MTransform.gameObject.AddComponent<Rigidbody>();
+        MTransform.gameObject.AddComponent<BoxCollider>().size = new Vector3(0.2f,0.20f,0.11f);
         handle.Rotate(handleRot);
         Destroy(gameObject, 15f);
     }
@@ -130,8 +129,9 @@ public class Lock : MonoBehaviour
 
         if(isCylinderA == true && isCylinderB == true && isCylinderC == true)
         {
-            // GenericEvents.s_instance.onSuccessPickCode.Invoke();
-            // GenericEvents.s_instance.onEndPickCode.Invoke();
+            Debug.Log("Opened");
+            onLockOpen.Invoke();
+            OpenLock();
         }
     }
 }

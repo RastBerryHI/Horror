@@ -1431,7 +1431,22 @@ MonoBehaviour:
   - {fileID: 1220669718}
   - {fileID: 312186754}
   handle: {fileID: 1700980389}
-  pickupPosition: {fileID: 186094019}
+  code: {x: 2, y: 3, z: 5}
+  onLockOpen:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1053285286697515}
+        m_TargetAssemblyTypeName: DoorRotator, Assembly-CSharp
+        m_MethodName: AllowOpen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &191697404
 GameObject:
   m_ObjectHideFlags: 0
@@ -17427,7 +17442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4a7515a9de8d9e47962cbd36cb70fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canOpen: 1
+  canOpen: 0
 --- !u!54 &1053285286697516
 Rigidbody:
   m_ObjectHideFlags: 0
