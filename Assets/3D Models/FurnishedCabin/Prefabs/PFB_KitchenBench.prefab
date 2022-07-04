@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23000010622421404}
   - component: {fileID: 64000010371907114}
   - component: {fileID: 2161783275392668689}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: door05
   m_TagString: LittleDoor
   m_Icon: {fileID: 0}
@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 23000012618657854}
   - component: {fileID: 64000010236074398}
   - component: {fileID: 546984008981955728}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: draw04
   m_TagString: Draw
   m_Icon: {fileID: 0}
@@ -350,7 +350,7 @@ GameObject:
   - component: {fileID: 23000010598228528}
   - component: {fileID: 64000010983216806}
   - component: {fileID: 6546064752312794371}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: door01
   m_TagString: LittleDoor
   m_Icon: {fileID: 0}
@@ -459,7 +459,7 @@ GameObject:
   - component: {fileID: 23000013423371178}
   - component: {fileID: 64000011894210142}
   - component: {fileID: 9099790044993535278}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: draw03
   m_TagString: Draw
   m_Icon: {fileID: 0}
@@ -568,7 +568,7 @@ GameObject:
   - component: {fileID: 23000013537687172}
   - component: {fileID: 64000013392780856}
   - component: {fileID: 7996710849593645535}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: door03
   m_TagString: LittleDoor
   m_Icon: {fileID: 0}
@@ -773,7 +773,7 @@ GameObject:
   - component: {fileID: 23000014290892676}
   - component: {fileID: 64000012309380072}
   - component: {fileID: 6509337794545150508}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: door02
   m_TagString: LittleDoor
   m_Icon: {fileID: 0}
@@ -882,7 +882,7 @@ GameObject:
   - component: {fileID: 23000012474295010}
   - component: {fileID: 64000013415296590}
   - component: {fileID: 5560391801576475489}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: door04
   m_TagString: LittleDoor
   m_Icon: {fileID: 0}
@@ -1025,7 +1025,7 @@ GameObject:
   - component: {fileID: 23000011664944534}
   - component: {fileID: 64000012842132914}
   - component: {fileID: 7911291812724796903}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: draw01
   m_TagString: Draw
   m_Icon: {fileID: 0}
@@ -1134,7 +1134,7 @@ GameObject:
   - component: {fileID: 23000013527208680}
   - component: {fileID: 64000012823878324}
   - component: {fileID: 8963896912483984062}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: draw02
   m_TagString: Draw
   m_Icon: {fileID: 0}

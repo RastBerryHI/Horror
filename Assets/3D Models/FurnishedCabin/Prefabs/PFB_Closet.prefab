@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33000014277133490}
   - component: {fileID: 23000012718520536}
   - component: {fileID: 64000013870767930}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: doorR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 4000014137976550}
   - component: {fileID: 5877700556548161733}
   - component: {fileID: 1383891945676647834}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: grp_doorL
   m_TagString: LittleDoor
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 33000011749529954}
   - component: {fileID: 23000012696852518}
   - component: {fileID: 64000010320867016}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 33000013578885416}
   - component: {fileID: 23000013553382408}
   - component: {fileID: 64000010461167922}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: doorL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +356,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4000013553281146}
   - component: {fileID: 95000011105672242}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PFB_Closet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -410,7 +410,7 @@ GameObject:
   - component: {fileID: 4000011842447506}
   - component: {fileID: 3068833135579430789}
   - component: {fileID: 1060858807041681734}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: grp_doorR
   m_TagString: LittleDoor
   m_Icon: {fileID: 0}
