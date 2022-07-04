@@ -56,10 +56,7 @@ public class ApplySlot : MonoBehaviour, IInterractiveItem
         // Iterating till 1st element, ingoring parent one
         for (int i = milestones.Length-1; i > 0; i--)
         {
-            if (i == milestones.Length-1)
-            {
-                needed.Mtransform.rotation = milestones[i].rotation;
-            }
+            needed.Mtransform.DOLocalRotateQuaternion(milestones[i].rotation,1);
 
             if (i == 1)
             {

@@ -5,6 +5,7 @@ using DG.Tweening;
 
 public class FurnDoorOpener : MonoBehaviour, IInterractiveItem
 {
+    [SerializeField] private bool canOpen = true;
     private Transform m_Transform;
     private float openingAngle = -90f;
     private bool isOpen = false;
@@ -21,8 +22,12 @@ public class FurnDoorOpener : MonoBehaviour, IInterractiveItem
         closingAngle = transform.localRotation.z;
     }
 
+    public void AllowOpen() => canOpen = true;
+
     public void OnIterraction(GameObject sender)
     {
+        if (!canOpen)
+            return;
         if (!isOpen)
         {
             m_Transform.DOLocalRotate(new Vector3(0, openingAngle, 0), openingTime, RotateMode.Fast);

@@ -29,5 +29,6 @@ public class Collactable : MonoBehaviour, IInterractiveItem
 
         inventory.AddToInventory(this);
         Destroy(GetComponent<Collider>());
+        transform.rotation = new Quaternion(0, 0, 0, 0);
     }
 }
