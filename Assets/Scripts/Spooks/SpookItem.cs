@@ -3,17 +3,17 @@ using UnityEngine;
 public class SpookItem : MonoBehaviour
 {
     private Transform m_Transform;
-    private IInterractiveItem interactive;    
+    private ISpookable interactive;    
 
     private void Awake()
     {
         m_Transform = transform;
-        interactive = GetComponent<IInterractiveItem>();
+        interactive = GetComponent<ISpookable>();
     }
 
     [ContextMenu("DoSpook")]
     public void DoSpook()
     {
-        interactive?.OnIterraction(gameObject);
+        interactive?.OnSpook(gameObject);
     }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightSwitch : MonoBehaviour, IInterractiveItem
+public class LightSwitch : MonoBehaviour, IInterractiveItem, ISpookable
 {
     [SerializeField] private List<Light> lights = new List<Light>();
 
@@ -13,5 +13,10 @@ public class LightSwitch : MonoBehaviour, IInterractiveItem
         {
             light.enabled = !light.enabled;
         }
+    }
+
+    public void OnSpook(GameObject sender)
+    {
+        OnIterraction(sender);
     }
 }

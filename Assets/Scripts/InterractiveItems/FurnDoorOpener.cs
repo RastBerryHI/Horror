@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class FurnDoorOpener : MonoBehaviour, IInterractiveItem
+public class FurnDoorOpener : MonoBehaviour, IInterractiveItem, ISpookable
 {
     [SerializeField] private bool canOpen = true;
     private Transform m_Transform;
@@ -37,5 +37,10 @@ public class FurnDoorOpener : MonoBehaviour, IInterractiveItem
             m_Transform.DOLocalRotate(new Vector3(0, closingAngle, 0), openingTime, RotateMode.Fast);
         }
         isOpen = !isOpen;
+    }
+
+    public void OnSpook(GameObject sender)
+    {
+        OnIterraction(sender);
     }
 }

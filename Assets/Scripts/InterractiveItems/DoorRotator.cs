@@ -1,7 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-public class DoorRotator : MonoBehaviour, IInterractiveItem
+public class DoorRotator : MonoBehaviour, IInterractiveItem, ISpookable
 {
     [SerializeField] private bool canOpen = true;
     private Transform m_Transform;
@@ -78,5 +78,10 @@ public class DoorRotator : MonoBehaviour, IInterractiveItem
         {
             ReturnToBaseRotation();
         }
+    }
+
+    public void OnSpook(GameObject sender)
+    {
+        OnIterraction(sender);
     }
 }

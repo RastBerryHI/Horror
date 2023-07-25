@@ -1,7 +1,7 @@
 using UnityEngine;
 using DG.Tweening;
 
-public class DrawOpener : MonoBehaviour, IInterractiveItem
+public class DrawOpener : MonoBehaviour, IInterractiveItem, ISpookable
 {
     private bool isOpen = false;
     private float openingTime = 0.5f;
@@ -29,4 +29,8 @@ public class DrawOpener : MonoBehaviour, IInterractiveItem
         isOpen = !isOpen;
     }
 
+    public void OnSpook(GameObject sender)
+    {
+        OnIterraction(sender);
+    }
 }
